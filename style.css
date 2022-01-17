@@ -1,0 +1,131 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width:100%;
+    max-width: 100%;
+    font-family: 'Arvo', serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Signika', sans-serif;
+}
+#inf{
+    margin-bottom: 50px;
+    color:rgba(53, 49, 238, 0.904) ;
+}
+.container{
+    width: 80%;
+      margin: 0 auto;
+      display: flex;
+    }
+    .half-width{
+        width:50%;
+    }
+    .half-width img{
+        width: 35%;
+    }
+    .button{
+        display: inline-flex;
+        text-decoration: none;
+        background-image: linear-gradient(white,tomato);
+        border-radius: 5px;
+        padding: 10px 40px;
+        color:white;
+        font-weight: 700;
+        font-family:'Quicksand',sans-serif ;
+    }
+    .button:hover{
+        display: block;
+        transform: scale(1.2);
+    }
+    .half-width img:hover{
+        transform: scale(1.3);
+        overflow: hidden;
+        transform: transform 2s ease-in-out;
+    }
+.logos{
+    display: inline-flex;
+    width: 80%;
+    padding-top: 5px;
+}
+.logos img:hover{
+    transform: scale(1.2);
+        overflow: hidden;
+        transform: transform 2s ease-in-out;
+}
+#leat{
+
+    color:rgba(53, 49, 238, 0.904) ;
+}
+.packeges{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap:30px;
+    position: absolute;
+    padding-top: 2%;
+    
+}
+.packege{
+    border: 20px;
+    border-radius: 10px;
+    padding-left: 5%;
+    width: 300px;
+    height: 476px;
+    background-color:whitesmoke;
+     margin: 10%;
+}
+.packege .packege-banner img{
+    width: 224px;
+    height: 104;
+    padding-top: 10px;
+    margin: 15px;
+    overflow: hidden;
+}
+.packege img:hover{
+    display: block;
+    transform: scale(1.2);
+    transition: transform 2s ease-in-out;
+
+}
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: rgb(235, 193, 87);
+}
+.fa-star.empty{
+    color: #AEAEAE;
+}
+#line{
+    width: 80%;
+}
+.but{
+display: inline-flex;
+justify-content:center;
+}
+/*------- Media Queries----- */
+/* ----Mobile Devices----- */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+   .half-width , .logos , .packeges{
+    
+       grid-template-columns: repeat(1, 1fr);
+   }
+
+   }
+   .logos{
+       flex-direction: column;
+   }
+/* --------Tablet Devices ---------*/
+
+@media only screen and(min-width:688px)and(max-width:992px) {
+    .container{
+        width: 100%;}
+    .half-width, .logos{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .packeges{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
